@@ -3,6 +3,7 @@ from argparse import ArgumentParser
 
 __dir__ = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(__dir__ + os.sep + "src")
+from decouple import config
 
 
 def shell(cmd):

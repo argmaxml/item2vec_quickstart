@@ -1,9 +1,12 @@
 import sys, json, os, threading, time, signal, collections
 from typing import Optional, List, Union
+from pathlib import Path
 import numpy as np
 import pandas as pd
 from fastapi import FastAPI
 from decouple import config
+
+__dir__= Path(__file__).absolute().parent.parent
 
 app = FastAPI()
 

@@ -4,3 +4,4 @@ fastapi==0.74.1
 pandas==1.4.1
 uvicorn==0.17.5
 python-decouple==3.8
+pyarrow==7.0.0

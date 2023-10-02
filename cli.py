@@ -1,9 +1,10 @@
 import sys, os, json, subprocess
 from argparse import ArgumentParser
-
-__dir__ = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(__dir__ + os.sep + "src")
+from pathlib import Path
 from decouple import config
+
+__dir__ = Path(__file__).absolute().parent.parent
+sys.path.append(str(__dir__ / "src"))
 
 
 def shell(cmd):

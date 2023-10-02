@@ -1,1 +1,1 @@
-
+while true;do echo "Starting server";/usr/bin/git fetch --all;/usr/bin/git reset --hard origin/master; /usr/bin/git pull;python -m pip install -r requirements.txt;mkdir -p data;pushd src;python -m uvicorn endpoint:app --host 0.0.0.0 --port 5000 --reload;popd;rm -rf data;echo "Respawning server";sleep 1;done
